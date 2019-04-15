@@ -1,3 +1,23 @@
+
+ALTER TABLE emp
+MODIFY job VARCHAR(10);
+
+ALTER TABLE emp
+MODIFY sal decimal(7, 2);
+
+ALTER TABLE emp
+MODIFY comm decimal(7, 2);
+
+# 테이블 생성 이후에 외래키 등록하기
+ALTER TABLE emp
+ADD CONSTRAINT fk1 foreign key(deptno)
+REFERENCES dept(deptno);
+
+
+
+
+
+
 SELECT * FROM emp;
 
 -- 3

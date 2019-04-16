@@ -38,3 +38,7 @@ select * from product;
 -- 5
 select sum(price)
 	from product;
+
+
+SELECT * FROM product WHERE isbn='123-1-10';
+    

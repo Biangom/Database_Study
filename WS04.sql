@@ -45,6 +45,12 @@ SELECT CONCAT(E.ENAME, '의 매니저는 ', M.ENAME, '이다') AS 문장
 FROM emp AS E
 	INNER JOIN emp AS M
 		ON E.MGR = M.EMPNO;
+        
+-- 6-2
+SELECT CONCAT(E.ENAME, '의 매니저는 ', M.ENAME, '이다') AS 문장
+FROM emp AS E
+INNER JOIN emp AS M
+WHERE E.MGR = M.EMPNO;
 
 
 -- 7
